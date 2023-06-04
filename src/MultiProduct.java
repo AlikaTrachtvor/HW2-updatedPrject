@@ -1,4 +1,8 @@
 public class MultiProduct extends Function{
+    /***
+     * This class represents a function that is made by multiplying different functions (must be at
+     * least 2 function).
+     */
     protected Function[] functions;
     private int funcNum;
 
@@ -7,12 +11,6 @@ public class MultiProduct extends Function{
         this.functions = new Function[this.funcNum];
         for(int i = 0; i < funcNum; i++)
             this.functions[i] = funcs[i];
-    }
-
-    public MultiProduct(Function func, int n){
-        this.funcNum = n;
-        for(int i = 0; i < n; i++)
-            this.functions[i] = func;
     }
     @Override
     public double valueAt(double x){

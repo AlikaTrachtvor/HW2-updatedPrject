@@ -44,7 +44,7 @@ public class Date {
     }
 
     /**
-     * This function compares between this object and another one and checks whether the values
+     * This method compares between this object and another one and checks whether the values
      * of their attributes are equal
      * @param obj the other object we're comparing the current object to
      * @return true if their attributes are completely equal and false otherwise
@@ -59,11 +59,22 @@ public class Date {
             return true;
     }
 
+    /***
+     * this method checks whether the given year is a leap year
+     * @param year the year being checked
+     * @return true if it is a leap year and false otherwise
+     */
     private boolean isLeapYear(int year){
         if(year % 400 == 0 || (year % 4 == 0 && year % 100 != 0))
             return true;
         return false;
     }
+
+    /***
+     * this method finds the number of days in a month
+     * @param month the month being checked
+     * @return numbers of day in this month
+     */
     private int daysInMonth(int month){
         if(month == 2 && isLeapYear(this.year))
             return 29;
@@ -76,8 +87,10 @@ public class Date {
     }
 
 
-    //First try, needs to be checked
-    //hashCode = how many days passed since 00/00/0000
+    /***
+     * this method calculate how much days passed since the date 00/00/0000
+     * @return number of days (positive for AC, negative for BC)
+     */
     @Override
     public int hashCode(){
         int hash = 0;
@@ -104,7 +117,7 @@ public class Date {
     }
 
     /**
-     * This function takes the object's information and represents it as a String
+     * This method takes the object's information and represents it as a String
      * @return a String representing a date in the following format: DD/MM/YYYY
      */
     @Override

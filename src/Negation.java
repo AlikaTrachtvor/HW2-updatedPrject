@@ -1,4 +1,7 @@
 public class Negation extends Function{
+    /***
+     * This class represents a negation of a function
+     */
     private Function function;
     public Negation (Function function){this.function = function;}
     @Override

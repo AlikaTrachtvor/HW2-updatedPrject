@@ -1,5 +1,8 @@
 import java.lang.Math;
 public class Polynomial extends Function {
+    /***
+     * This class represents a Polynomial
+     */
     protected double[] coefficients;
 
     public Polynomial(double... coefficients){
@@ -33,6 +36,10 @@ public class Polynomial extends Function {
         }
     }
 
+    /***
+     * this method checks whether all the coefficients of the Polynomial are zero
+     * @return true if all the coefficients of the Polynomial are zero and false otherwise
+     */
     private boolean AllZero(){
         for(int i = 0; i < this.coefficients.length; i++){
             if(this.coefficients[i] != 0)
