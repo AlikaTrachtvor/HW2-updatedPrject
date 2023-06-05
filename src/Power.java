@@ -1,5 +1,8 @@
 
 public class Power extends Function{
+    /***
+     * The class represents a power function
+     */
 
     private int power;
     private Function function1;

@@ -1,5 +1,9 @@
 
 public class Quotient extends Function {
+    /***
+      * The class represents a function that is a quotient between two functions
+     */
+
     private Function function1;
     private Function function2;
 

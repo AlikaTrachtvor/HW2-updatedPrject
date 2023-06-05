@@ -1,5 +1,8 @@
 
 public class Sum extends MultiSum {
+    /***
+     * The class represents a function combined from summarizing two functions
+     */
 
     public Sum(Function function1, Function function2) {
         super(function1,function2);

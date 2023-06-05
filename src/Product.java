@@ -1,5 +1,8 @@
 
 public class Product extends MultiProduct{
+    /***
+     * The class represents a function combined from multiplying two separate functions
+     */
 
     public Product(Function function1,Function function2){
         super(function1, function2);

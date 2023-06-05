@@ -1,7 +1,8 @@
 public class DateTime extends Date {
-    private int hour;
-    private int minute;
-
+    /**
+     * This class is an extension of Date class ,that describes a date , with addition of
+     * time parameters , in a format day/month/year hour:minute
+     */
 
     public DateTime(int year, int month, int day, int hour, int minute) {
         super(year, month, day);

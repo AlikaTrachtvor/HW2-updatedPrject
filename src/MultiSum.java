@@ -1,4 +1,7 @@
 public class MultiSum extends Function{
+    /***
+     *  This class represents a function that is made by summarizes different functions (must be at least 2 functions)
+     */
     protected Function [] functions;
     private int numOfFunc;
 

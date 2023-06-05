@@ -1,5 +1,9 @@
 
 public class Difference extends Function {
+    /***
+     * The class represents a function that is a difference between two functions
+     */
+
     private Function function1;
     private Function function2;
     public Difference(Function function1, Function function2) {
